@@ -1,0 +1,36 @@
+simple nodejs app
+
+new item-> nodejs_step1
+copy git url
+https://github.com/VIJETH2001/simple-nodejs-app_Lab_Exam.git
+
+*/master
+
+Build Steps
+-> Execute shell
+
+cd $WORKSPACE
+sudo apt update
+sudo apt install -y nodejs npm
+npm install
+node index.js &    (& add this to stop the running in bg)
+
+save and build
+go to browser localhost:3000
+
+
+new item -> nodejs_step2
+copy from nodejs_step1
+->Build step 
+Docker Build and Publish
+->repo name- vijeth2001/nodejsapp
+->tag-v1
+credentials(add docker credentials)
+
+Build step 
+->Execute shell
+docker run -it -d -p 3005:3000  vijeth2001/nodejsapp
+
+save and build 
+localhost:3005
+
